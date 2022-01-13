@@ -13,7 +13,7 @@ if(isset($json->email)){
 echo "\e\33[32;1m[+]Email    : ".$json->email."\e[0m\n";
 echo "\e\33[32;1m[+]Password : ".$json->password."\e[0m\n";
 echo "\e\33[32;1m[+]PIN      : ".$json->pin."\e[0m\n";
-echo "\e\33[32;1m[*]Note     : Login Melalui App/Web. Jika dibutuhkan Verifikasi, Lakukan Verifikasi di :\n              \e\33[36;1mhttps://generator.mail/".$json->email."\e[0m\n";
+echo "\e\33[32;1m[*]Note     : Login Melalui App/Web. Jika dibutuhkan Verifikasi, Lakukan Verifikasi di :\n              \e\33[36;1mhttps://generator.email/".$json->email."\e[0m\n";
 echo "\e\33[33;1m[*]Hasil tersimpan di result.txt\e[0m\n\n";
 $of = fopen("result.txt", 'a');
 fwrite($of, "Email : ".$json->email ."\nPassword : ". $json->password ."\nPIN : ". $json->pin."\n\n");
