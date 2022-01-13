@@ -4,7 +4,7 @@ $url = 'http://cgv.herokuapp.com/';
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl, CURLOPT_HTTPHEADER, 'Content-Type: application/json');
+curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 $hasil = curl_exec($curl);
 $json = json_decode($hasil);
 echo "\e\33[36;1mCGV Account Creator B1G1 - Create by Aprizal\e[0m\n";
